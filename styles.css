@@ -1,0 +1,87 @@
+/* Extend styles.css */
+
+/* Additional styles for buttons */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.no {
+    background-color: #ff4757;
+    position: relative;
+    cursor: pointer;
+}
+
+.no:hover {
+    background-color: #ff6b81;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+/* styles.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    background-image: url(https://st3.depositphotos.com/2734453/13736/i/450/depositphotos_137365120-stock-photo-valentines-day.jpg);
+    z-index: 1.6;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content h1 {
+    color:red;
+    font-size: 2.5em;
+}
+
+.content p {
+    color: pink;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.button {
+    display: inline-block;
+    background-color: #ff6b81;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #ff3b5f;
+}
+
+@media (max-width: 600px) {
+    .content h1 {
+        font-size: 2em;
+    }
+    .content p {
+        font-size: 1em;
+    }
+    .button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}
